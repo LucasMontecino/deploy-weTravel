@@ -32,7 +32,7 @@ import Confirmacion from "./components/confirmacion/Confirmacion";
 import { AdminUsers } from "./components/Dashboard/AdminUsers";
 import Baned from "./components/baned/baned";
 import axios from "axios";
-axios.defaults.baseURL = "deploy-wetravel-production.up.railway.app/";
+axios.defaults.baseURL = "https://deploy-wetravel-production.up.railway.app/";
 
 function App() {
   const { user } = useAuth0();
