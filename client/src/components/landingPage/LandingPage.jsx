@@ -1,7 +1,6 @@
 import { React, useEffect } from "react";
 import Card from "../card/card";
 import NavBar from "../navBar/NavBar";
-import Search from "../search/Search";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getHotels } from "../../redux/action/index.js";
