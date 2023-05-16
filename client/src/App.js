@@ -13,12 +13,10 @@ import Cart from "./components/cart/Cart";
 import Favourites from "./components/favourites/Favourites";
 import { HotelsHos } from "./components/ProfileUser/hospedador/hotels/HotelsHos";
 import { UserImages } from "./components/ProfileUser/Huesped/UserImages";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   getHotels,
-  getFavorites,
   getReservesByCart,
-  getUserById,
   getServices,
 } from "./redux/action/index";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -30,13 +28,14 @@ import { AdminCards } from "./components/Dashboard/AdminCards";
 import { AdminReviews } from "./components/Dashboard/AdminReviews";
 import { AccessDenied } from "./components/Dashboard/AccessDenied";
 import { AdminImages } from "./components/Dashboard/AdminImages";
-import Confirmacion from "./components/confirmacion/Confirmacion"
-import Paginate from "./components/Paginate/Paginate"
+import Confirmacion from "./components/confirmacion/Confirmacion";
 import { AdminUsers } from "./components/Dashboard/AdminUsers";
-import Baned from "./components/baned/baned"
+import Baned from "./components/baned/baned";
+import axios from "axios";
+axios.defaults.baseURL = "http://localhost:3001/";
 
 function App() {
-  const {user} = useAuth0()
+  const { user } = useAuth0();
   useLocalStorage("userEmail");
 
   let dispatch = useDispatch();
@@ -45,15 +44,13 @@ function App() {
   React.useEffect(() => {
     dispatch(getHotels());
     dispatch(getServices());
-  }, []);
+  }, [dispatch]);
 
   React.useEffect(() => {
-    if(user) {
-      dispatch(getReservesByCart(user.email))
+    if (user) {
+      dispatch(getReservesByCart(user.email));
     }
-
-  }, [user]);
-
+  }, [dispatch, user]);
 
   return (
     <BrowserRouter>
@@ -72,15 +69,15 @@ function App() {
           <Route exact path="/favourites" component={Favourites} />
           <Route exact path="/user-images" component={UserImages} />
           <Route exact path="/images" component={Images} />
-          <Route path= "/anfitrion/hotels" component={HotelsHos} />
+          <Route path="/anfitrion/hotels" component={HotelsHos} />
           <Route exact path="/Dashboard" component={Dashboard} />
           <Route exact path="/admin-cards" component={AdminCards} />
           <Route exact path="/admin-reviews" component={AdminReviews} />
           <Route exact path="/admin-images" component={AdminImages} />
           <Route exact path="/admin-users" component={AdminUsers} />
           <Route exact path="/access-denied" component={AccessDenied} />
-          <Route exact path="/confirmacion/:id" component={Confirmacion} />       
-          <Route exact path="/baned" component={Baned}/>
+          <Route exact path="/confirmacion/:id" component={Confirmacion} />
+          <Route exact path="/baned" component={Baned} />
           <Route path="#" element={<Home />} />
         </Switch>
       </div>

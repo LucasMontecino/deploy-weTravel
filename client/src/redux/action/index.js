@@ -29,33 +29,32 @@ export const SEND_MAIL = "SEND_MAIL";
 export const BANED = "BANED";
 export const SEND_MAIL_CREATE = "SEND_MAIL_CREATE";
 // 1 depachar los hoteles
-export function getHotels(page=0) {
-  if(page){
-  return async function (dispatch) {
-    const json = await axios.get(`http://localhost:3001/hotels`);
-    return dispatch({
-      type: GET_HOTELS,
-      payload: json.data,
-    }); //segunda función que recibe dispatch y despacha una acción / el tipo y el payload: devuelve el backend
-  };
-} else {
-  return async function (dispatch) {
-    const json = await axios.get("http://localhost:3001/hotels");
-    console.log("asd",json.data)
-    return dispatch({
-      type: GET_HOTELS,
-      payload: json.data,
-    }); 
-  };
+export function getHotels(page = 0) {
+  if (page) {
+    return async function (dispatch) {
+      const json = await axios.get(`/hotels`);
+      return dispatch({
+        type: GET_HOTELS,
+        payload: json.data,
+      }); //segunda función que recibe dispatch y despacha una acción / el tipo y el payload: devuelve el backend
+    };
+  } else {
+    return async function (dispatch) {
+      const json = await axios.get("/hotels");
+      console.log("asd", json.data);
+      return dispatch({
+        type: GET_HOTELS,
+        payload: json.data,
+      });
+    };
+  }
 }
-}
-
 
 export function getDetail(id) {
   return async function (dispatch) {
     dispatch(loading());
     setTimeout(async () => {
-      const json = await axios(`http://localhost:3001/hotels/${id}`);
+      const json = await axios(`/hotels/${id}`);
       return dispatch({
         type: GET_DETAIL,
         payload: json.data,
@@ -79,7 +78,7 @@ export function getSearchHotels(
     //console.log(filters);
     const { stars, priceMin, priceMax } = filters;
     const json = await axios.get(
-      `http://localhost:3001/hotels?search=${search}&stars=${stars}&priceMin=${priceMin}&priceMax=${priceMax}`
+      `/hotels?search=${search}&stars=${stars}&priceMin=${priceMin}&priceMax=${priceMax}`
     );
 
     return dispatch({
@@ -91,7 +90,7 @@ export function getSearchHotels(
 
 export function postHotel(payload) {
   return async function (dispatch) {
-    const response = await axios.post("http://localhost:3001/hotels", payload);
+    const response = await axios.post("/hotels", payload);
     return dispatch({
       type: POST_HOTEL,
       payload: response,
@@ -102,7 +101,7 @@ export function postHotel(payload) {
 export function getUser() {
   return async function (dispatch) {
     try {
-      const res = await axios("http://localhost:3001/users");
+      const res = await axios("/users");
       // console.log('RES GET USER:', res.data);
       dispatch({
         type: GET_USER,
@@ -117,7 +116,7 @@ export function getUser() {
 export function getUserById(email) {
   return async function (dispatch) {
     try {
-      let res = await axios(`http://localhost:3001/users/${email}`);
+      let res = await axios(`/users/${email}`);
       //console.log("RES GET USER BY ID:", res.data);
       dispatch({
         type: DETAIL_USER,
@@ -131,7 +130,7 @@ export function getUserById(email) {
 
 export function postUser(payload) {
   return async function () {
-    const response = await axios.post("http://localhost:3001/users", payload);
+    const response = await axios.post("/users", payload);
     return response;
   };
 }
@@ -140,10 +139,7 @@ export function updateUser(email, status) {
   // console.log('PUT ID:', id);
   return async function (dispatch) {
     try {
-      const response = await axios.put(
-        `http://localhost:3001/users/${email}`,
-        status
-      );
+      const response = await axios.put(`/users/${email}`, status);
       console.log("RES PUT:", response);
       dispatch({
         type: UPDATE_USER,
@@ -161,7 +157,7 @@ export function updateUser(email, status) {
 
 export function getServices() {
   return async function (dispatch) {
-    const json = await axios.get("http://localhost:3001/services");
+    const json = await axios.get("/services");
     // console.log(json) //pendiente porque no me está trayendo nada
     return dispatch({
       type: GET_SERVICES,
@@ -172,7 +168,7 @@ export function getServices() {
 
 export function postReserve(payload) {
   return async function (dispatch) {
-    const reserve = await axios.post("http://localhost:3001/reserve", payload);
+    const reserve = await axios.post("/reserve", payload);
     return dispatch({
       type: POST_HOTEL,
       payload: reserve,
@@ -183,7 +179,7 @@ export function postReserve(payload) {
 export const payReserve = (payload) => {
   return async function (dispatch) {
     try {
-      const pay = await axios.post("http://localhost:3001/mercadopay", payload);
+      const pay = await axios.post("/mercadopay", payload);
       return dispatch({
         type: PAY_RESERVE,
         payload: pay,
@@ -197,7 +193,7 @@ export const payReserve = (payload) => {
 export function getReview() {
   return async function (dispatch) {
     let reviews = [];
-    const res = (await axios.get("http://localhost:3001/review")).data;
+    const res = (await axios.get("/review")).data;
     reviews.push(res);
     // console.log("get review", reviews.flat(Infinity));
     return dispatch({
@@ -210,9 +206,7 @@ export function getReview() {
 export function postReview(review) {
   return async function (dispatch) {
     try {
-      const response = (
-        await axios.post("http://localhost:3001/review", review)
-      ).data;
+      const response = (await axios.post("/review", review)).data;
       dispatch(getReview());
       return response;
     } catch (error) {
@@ -223,7 +217,7 @@ export function postReview(review) {
 
 export const deleteReview = (id) => async (dispatch) => {
   try {
-    await axios.delete(`http://localhost:3001/review/${id}`);
+    await axios.delete(`/review/${id}`);
     dispatch({
       type: DELETE_REVIEW,
     });
@@ -234,7 +228,7 @@ export const deleteReview = (id) => async (dispatch) => {
 
 export function getReserves(id) {
   return async function (dispatch) {
-    const json = await axios.get("http://localhost:3001/reserve/" + id);
+    const json = await axios.get("/reserve/" + id);
     // console.log(json) //pendiente porque no me está trayendo nada
     return dispatch({
       type: GET_RESERVE,
@@ -246,9 +240,7 @@ export function getReserves(id) {
 export function getReservesByCart(user) {
   return async function (dispatch) {
     try {
-      const json = await axios.get(
-        "http://localhost:3001/order/" + user + "/cart"
-      );
+      const json = await axios.get("/order/" + user + "/cart");
 
       // console.log(json) //pendiente porque no me está trayendo nada
       return dispatch({
@@ -266,7 +258,7 @@ export function getReservesByCart(user) {
 
 export function getReservesUser(email) {
   return async function (dispatch) {
-    const json = await axios.get(`http://localhost:3001/reserve/${email}`);
+    const json = await axios.get(`/reserve/${email}`);
     return dispatch({
       type: GET_RESERVE_USER,
       payload: json.data,
@@ -274,19 +266,17 @@ export function getReservesUser(email) {
   };
 }
 
-export function cartReserves(reserva) {  
-     return async function(dispatch) {
-      const json = await axios.post("http://localhost:3001/order", reserva);
-      console.log(json)
-      return json
-    }
-
-  
+export function cartReserves(reserva) {
+  return async function (dispatch) {
+    const json = await axios.post("/order", reserva);
+    console.log(json);
+    return json;
+  };
 }
 
 export function getIdMercadoPago(user) {
   return async function (dispatch) {
-    const json = await axios.get("http://localhost:3001/mercadopay/" + user);
+    const json = await axios.get("/mercadopay/" + user);
 
     return dispatch({
       type: GET_ID_MERCADO_PAGO,
@@ -297,8 +287,7 @@ export function getIdMercadoPago(user) {
 
 export const postImage = (payload) => async () => {
   try {
-    const images = (await axios.post("http://localhost:3001/images", payload))
-      .data;
+    const images = (await axios.post("/images", payload)).data;
     // console.log('res post:', images)
     return images;
   } catch (error) {
@@ -308,7 +297,7 @@ export const postImage = (payload) => async () => {
 
 export const getImage = () => async (dispatch) => {
   try {
-    let res = (await axios("http://localhost:3001/images")).data;
+    let res = (await axios("/images")).data;
     return dispatch({
       type: GET_IMAGE,
       payload: res,
@@ -320,7 +309,7 @@ export const getImage = () => async (dispatch) => {
 
 export const deleteImages = (id) => async (dispatch) => {
   try {
-    await axios.delete(`http://localhost:3001/images/${id}`);
+    await axios.delete(`/images/${id}`);
     dispatch({
       type: DELETE_REVIEW,
     });
@@ -333,7 +322,7 @@ export const deleteImages = (id) => async (dispatch) => {
 
 export function deleteReserve(id) {
   return async function (dispatch) {
-    const json = await axios.delete("http://localhost:3001/reserve/" + id);
+    const json = await axios.delete("/reserve/" + id);
     console.log(json.data);
 
     return dispatch({
@@ -348,7 +337,7 @@ export function deleteReserve(id) {
 export const deleteHotel = (id) => {
   return async function (dispatch) {
     try {
-      await axios.delete(`http://localhost:3001/hotels/${id}`);
+      await axios.delete(`/hotels/${id}`);
       return dispatch({
         type: DELETE_HOTEL,
         payload: id,
@@ -366,12 +355,10 @@ export const getFavorites = (fav) => {
 export const updateHotel = (hotel, id) => {
   return async function (dispatch) {
     try {
-      const response = (
-        await axios.put(`http://localhost:3001/hotels/${id}`, hotel)
-      ).data;
+      const response = (await axios.put(`/hotels/${id}`, hotel)).data;
       console.log(response);
-     // console.log(response);
-      dispatch(getHotels())
+      // console.log(response);
+      dispatch(getHotels());
     } catch (error) {
       console.log(error);
     }
@@ -380,11 +367,9 @@ export const updateHotel = (hotel, id) => {
 
 export const sendMail = (email) => {
   return async function (dispatch) {
-    console.log(email)
+    console.log(email);
     try {
-      const response = (
-        await axios.post(`http://localhost:3001/send-email`, email)
-      ).data;
+      // const response = (await axios.post(`/send-email`, email)).data;
 
       return dispatch({
         type: SEND_MAIL,
@@ -397,9 +382,7 @@ export const baned = (payload, id) => {
   console.log("baned", payload, id);
   return async function (dispatch) {
     try {
-      const json = (
-        await axios.put(`http://localhost:3001/baned/${id}`, payload)
-      ).data;
+      const json = (await axios.put(`/baned/${id}`, payload)).data;
       console.log("json", json);
       dispatch(getUser());
       // return dispatch({
@@ -409,25 +392,18 @@ export const baned = (payload, id) => {
     } catch (error) {
       console.log(error);
     }
-  }
-}
+  };
+};
 
 export const sendMailCreate = (email) => {
-  return async function (dispatch)  {
+  return async function (dispatch) {
     try {
-      const response = (
-        await axios.post(`http://localhost:3001/send-email-create`, email)
-      ).data;
+      // const response = (await axios.post(`/send-email-create`, email)).data;
 
       return dispatch({
         type: SEND_MAIL_CREATE,
-        payload: ''
-      })
-    } catch (error) {
-      
-    }
-  }
-}
-
-  
-
+        payload: "",
+      });
+    } catch (error) {}
+  };
+};

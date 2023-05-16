@@ -24,7 +24,6 @@ import {
   DELETE_REVIEW,
   DELETE_IMAGES,
   BANED,
-  POST_ORDER
 } from "../action/index";
 
 const initialState = {
@@ -44,8 +43,7 @@ const initialState = {
   favorites: [],
   images: [],
   reservesUser: [],
-  hasMore:true,
-
+  hasMore: true,
 };
 
 function rootReducer(state = initialState, action) {
@@ -71,7 +69,7 @@ function rootReducer(state = initialState, action) {
         ...state, //una copia del estado
         hotels: action.payload, // almacenar en este objeto lo que llega del backend
         copyHotels: action.payload,
-        hotelFilter: action.payload
+        hotelFilter: action.payload,
         // copyHotels: state.hasMore !== true ? state.hotels : state.hotels.concat(action.payload),
         // hotelFilter: state.hasMore !== true ? state.hotels : state.hotels.concat(action.payload)
       };
@@ -203,7 +201,7 @@ function rootReducer(state = initialState, action) {
         ...state,
       };
 
-    //  case POST_ORDER: 
+    //  case POST_ORDER:
     //  return {
     //   ...state
     //  }
