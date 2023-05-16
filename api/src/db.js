@@ -3,10 +3,10 @@ const { Sequelize } = require("sequelize");
 const fs = require("fs");
 const path = require("path");
 const user = require("./models/user");
-const { DB_USER, DB_PASSWORD, DB_HOST } = process.env;
+const { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME } = process.env;
 
 const sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/wetravel`,
+  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
   {
     logging: false,
     native: false,
@@ -36,7 +36,8 @@ let capsEntries = entries.map((entry) => [
 
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { Hotel, User, Reserves, Review, Order, Favorites, Image } = sequelize.models;
+const { Hotel, User, Reserves, Review, Order, Favorites, Image } =
+  sequelize.models;
 
 Hotel.belongsToMany(User, { through: "user-hotels" });
 User.belongsToMany(Hotel, { through: "user-hotels" });
