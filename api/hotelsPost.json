@@ -1,0 +1,262 @@
+[
+    {
+        "name": "Broadway Hotel & Suites",
+        "description": "El Broadway Hotel & Suites se halla en Buenos Aires, a 50 metros del Obelisco, y cuenta con wifi gratis, pileta panorámica en la azotea y zona de terraza. Se sirve un desayuno buffet variado. El restaurante propone platos de la cocina local e internacional. Las habitaciones del Broadway Hotel & Suites presentan una decoración minimalista impecable de estilo Art Déco y disponen de suelo de parquet, lámparas de araña elegantes y ventanales con cortinas. Algunas incluyen microondas, minibar y vistas a la ciudad, mientras que otras tienen paneles giratorios con TV de pantalla plana por cable y baño con elementos de mármol. Hay gimnasio, pileta de temporada y sauna, así como recepción 24 horas con servicios de alquiler de autos y de venta de entradas para espectáculos. También se ofrece estacionamiento privado por un adicional. El Broadway Hotel & Suites se encuentra a 350 metros del teatro Colón y a 1,4 km del paseo marítimo de Puerto Madero. Además, este hotel está a 35 km del aeropuerto internacional de Ezeiza y a 5,8 km del aeropuerto Jorge Newbery.",
+        "stars": "4",
+        "price": "16156",
+        "services": [
+            "1 pileta",
+            "Habitaciones para no fumadores",
+            "Traslados",
+            "Gimnasio",
+            "Adaptado para personas con movilidad reducida",
+            "Wifi gratis",
+            "Wifi en toda la propiedad",
+            "Bar",
+            "Muy buen desayuno"
+        ],
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/328799423.jpg?k=4054430ba545c81ae9569a5c22563e9243e41a4480b8e07c4582ae6e41a7b583&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/225058531.jpg?k=8791829e23664fd2fbd9699d27191e7535b578962f73217a1fc000e8f9bf7045&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/225058513.jpg?k=abb28e7ed301ea56341117f8cd9784532a1feea0e1965033690c85d004605c10&o=&hp=1"
+        ],
+        "continent": "America",
+        "location": "Argentina",
+        "city": "Buenos Aires",
+        "review": "",
+        "comments": [],
+        "room": {
+            "name": "Suite Junior Doble",
+            "properties": [
+                "40 m²",
+                "Kitchenette privada",
+                "Baño en suite",
+                "Pileta con vista",
+                "Pileta en el último piso",
+                "Aire acondicionado",
+                "TV de pantalla plana",
+                "Insonorización",
+                "Minibar",
+                "Wifi gratis"
+            ],
+            "size": "40 m²",
+            "description": "Suite amplia con sala de estar independiente. El acceso a la sauna, al gimnasio y a la piscina al aire libre está incluido en el precio de la habitación.",
+            "photos": [
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/43847617.jpg?k=eed0087baa7043c5a3511b627646deb18236d079fd3c6f739f4b0d4e3bab66fb&o=",
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/38428953.jpg?k=e9230119a82a9b6d4f893e457d8aa6fe2850a045ff43e1faa74090b5ffce5f7d&o="
+            ]
+        },
+        "user": ""
+    },
+    {
+        "name": "Esplendor by Wyndham Asuncion",
+        "description": "El Esplendor by Wyndham Asuncion ofrece habitaciones con aire acondicionado y wifi gratis a 3,3 km del Zoo y Jardín Botánico de Asunción. Este hotel de 5 estrellas, construido en 2015, está a 6 km del Centro de Información de las Naciones Unidas y a 7 km de la bahía de Asunción. Además alberga un restaurante y queda a 7 km del ferrocarril Carlos Antonio López. Las habitaciones del Esplendor by Wyndham Asuncion cuentan con armario, TV de pantalla plana y baño privado. El Esplendor by Wyndham Asuncion sirve un desayuno buffet o americano. n el Esplendor by Wyndham Asuncion hay una terraza. En la recepción 24 horas se ofrece información turística. El Esplendor by Wyndham Asuncion queda a 8 km de la catedral Metropolitana y el Centro Cultura de la República. El aeropuerto internacional Silvio Pettirossi está a 6 km.",
+        "stars": "5",
+        "price": "10962",
+        "services": [
+            "1 pileta",
+            "Traslados",
+            "Spa",
+            "Gimnasio",
+            "Servicio a la habitación",
+            "Estacionamiento privado",
+            "Adaptado para personas con movilidad reducida",
+            "Bar",
+            "Muy buen desayuno"
+        ],
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/144732587.jpg?k=6324b70bc3a6a27c87f5daa3dd84ef5b13d867eeba86e2924c4b32f5b4ac04f7&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/201547215.jpg?k=91f99473d497b909887feb0999b90c5a9f4ca673aeae852746cd9d58d7203ef3&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/167373571.jpg?k=4a851dcf40b379c43cc6e469f41f330105b10d4f64cdf1d77c60a323412bd401&o=&hp=1"
+        ],
+        "continent": "America",
+        "location": "Paraguay",
+        "city": "Asuncion",
+        "review": "",
+        "comments": [],
+        "room": {
+            "name": "Habitación con cama extragrande",
+            "properties": [
+                "26 m²",
+                "Aire acondicionado",
+                "Baño en suite",
+                "TV de pantalla plana",
+                "Minibar",
+                "Wifi gratis"
+            ],
+            "size": "26 m²",
+            "description": "This double room features a seating area, air conditioning and bathrobe.",
+            "photos": [
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/164081694.jpg?k=868a54845f34460c70453df86fbe352aa6425921e007cbb04e67ac443665e2b4&o=",
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/117699873.jpg?k=2343320671fdf12938d226126369f4fe6dd2f10421de72484c4b9be300343530&o="
+            ]
+        },
+        "user": ""
+    },
+    {
+        "name": "Lisboa Pessoa Hotel",
+        "description": "El Lisboa Pessoa Hotel, inspirado en la vida y obra de Fernando Pessoa, está ubicado en el centro de Lisboa, a 200 metros del barrio de Chiado. Este hotel alberga un restaurante con vistas panorámicas y cuenta con centro de fitness y spa, instalaciones para reuniones y biblioteca. Hay wifi gratis. Se facilita estacionamiento privado por un adicional. El Lisboa Pessoa Hotel ofrece una gran variedad de habitaciones. Hay habitaciones comunicadas, con terraza o con vistas impresionantes a Lisboa. Todas las habitaciones disponen de caja fuerte, aire acondicionado y TV de pantalla plana con canales por cable. El baño incluye ducha a ras de suelo y artículos de aseo gratuitos. Hay recepción 24 horas. Este hotel ofrece wifi gratis. El restaurante Mensagem proporciona un ambiente íntimo gracias a sus 8 espacios con ventana privada. Además, tiene 2 terrazas con vistas a la capital portuguesa. El chef Manuel Ferreira elabora platos inspirados en la tradición portuguesa, todos ellos con ingredientes seleccionados con mimo. El Lisboa Pessoa Hotel se encuentra a 200 metros de la plaza de Rossio y a 300 metros del teatro nacional Doña María II. El aeropuerto Humberto Delgado queda a 6 km.",
+        "stars": "4",
+        "price": "27362",
+        "services": [
+            "1 pileta",
+            "Spa",
+            "Habitaciones para no fumadores",
+            "Traslados",
+            "Gimnasio bueno",
+            "Restaurante",
+            "Servicio a la habitación",
+            "Tetera/cafetera en todas las habitaciones",
+            "Bar",
+            "Desayuno fantastico"
+        ],
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/107833568.jpg?k=7a5bce0cae8bff1a156d8c3003731d1715e97961dda0c465a8d30ab0f6124d8b&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/249855923.jpg?k=82c9699c048df6440fd7e5a94e14b00f757545a9e956268adf25bca17d653c66&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/250973849.jpg?k=3cb15384d95bfe0725c0de4c351461fba99b0071427b45bdc891d1503c77447d&o=&hp=1"
+        ],
+        "continent": "Europa",
+        "location": "Portugal",
+        "city": "Lisboa",
+        "review": "",
+        "comments": [],
+        "room": {
+            "name": "Habitación Doble Estándar",
+            "properties": [
+                "15 m²",
+                "Aire acondicionado",
+                "TV de pantalla plana",
+                "Insonorización",
+                "Minibar",
+                "Wifi gratis"
+            ],
+            "size": "15 m²",
+            "description": "Habitación con aire acondicionado, TV de pantalla plana, nevera pequeña y baño privado con artículos de aseo gratuitos y ducha a ras de suelo.",
+            "photos": [
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/249854521.jpg?k=24c14f2254cea57e1df180e663618cd6bca4d35a19bb38a4a8e0356787f1c38b&o=",
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/360310887.jpg?k=57e39c03a5dc5a324c17aa9b448f337773fa103218c7f1c6055dcc38245d8cb8&o="
+            ]
+        },
+        "user": ""
+    },
+    {
+        "name": "Hotel Stadt Gütersloh",
+        "description": "El Hotel Stadt Gütersloh se encuentra en Gütersloh, a 16 km del jardín japonés de Bielefeld, y ofrece vistas a la ciudad. Hay servicio de habitaciones, cajero automático y WiFi gratuita en todas las instalaciones. El hotel dispone de habitaciones familiares.Las habitaciones incluyen escritorio, TV de pantalla plana, baño privado, ropa de cama y toallas. Las habitaciones incluyen armario.El Hotel Stadt Gütersloh se encuentra a 17 km del Museo Kunsthalle Bielefeld y del castillo de Sparrenburg. El aeropuerto más cercano es el de Paderborn-Lippstadt, ubicado a 62 km.",
+        "stars": "3",
+        "price": "13367",
+        "services": [
+            "Habitaciones sin humo",
+            "Wifi gratis",
+            "Habitaciones familiares"
+        ],
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/393677561.jpg?k=02a712ce0a2ffa20ce08f6c30c979acb1d4f539df5a03e15f976de3c8e918f6b&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/393677740.jpg?k=8b6d6e92887610cb4ca02c190c996e0cf45bd3be64ed11685d9c7fc45dacad82&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/393677718.jpg?k=f4adee5c7bbbc7f60b26b07b00a720a4116691d3f7de0b7d7b2caad12ace83ba&o=&hp=1"
+        ],
+        "continent": "Europa",
+        "location": "Alemania",
+        "city": "Gütersloh",
+        "review": "",
+        "comments": [],
+        "room": {
+            "name": "Habitación Doble Deluxe",
+            "properties": [
+                "30 m²",
+                "Vistas a la ciudad",
+                "Bañera",
+                "Baño en la habitación",
+                "TV de pantalla plana",
+                "Wifi gratis"
+            ],
+            "size": "30 m²",
+            "description": "",
+            "photos": [
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/393677669.jpg?k=d01b66eb32972a4113f1331b4373700e61a56a7d2822b5dda71364d26f1dbf49&o=",
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/393677662.jpg?k=9c9d821434a4f0f047419cc04fcb8000506b00d48527ead272a0cab2ba285dae&o="
+            ]
+        }
+    },
+    {
+        "name": "Mitsui Garden Hotel Roppongi Tokyo Premier",
+        "description": "El Mitsui Garden Hotel Roppongi Tokyo Premier se encuentra en Tokio, a 400 metros del Museo Sony Music Roppongi y a 500 metros del santuario de Asahi, y ofrece wifi gratis en todas las instalaciones. El alojamiento está situado a 1,1 km del Museo de Arte Mori y del santuario Juban Inari, así como a 1,3 km de la Antigua Residencia de Naoya Shiga. También hay recepción las 24 horas, consigna de equipaje y servicio de cambio de divisa. Todos los alojamientos están equipados con heladera. En las inmediaciones hay varios lugares de interés, como el Museo Sen-oku Hakukokan, el santuario Izumo Tokyo Bunshi y el edificio Roppongi Hills. Asimismo, el Mitsui Garden Hotel Roppongi Tokyo se halla a 22 km del aeropuerto internacional de Tokio-Haneda.",
+        "stars": "5",
+        "price": "40482",
+        "services": [
+            "Habitaciones para no fumadores",
+            "Wifi gratis",
+            "Gimnasio",
+            "Restaurante",
+            "Recepción 24 horas",
+            "Ascensor"
+        ],
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/288108455.jpg?k=7b9f4cf246fe508db3370e978858c5edcccfae86d06651ea9c55d5859c99acc4&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/238360157.jpg?k=960903f2b23159ea267efe4277ecec64ab6c56cc6386c9d6039fbe0f9791a90c&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/238353640.jpg?k=ecd6b8eda7e4c16be9ca733a4534a7e0a69c6380ee4fa57b090c3c189d5a892c&o=&hp=1"
+        ],
+        "continent": "Asia",
+        "location": "Japon",
+        "city": "Tokio",
+        "review": "",
+        "comments": [],
+        "room": {
+            "name": "Habitación Doble Superior Hollywood - 2 camas - No fumadores",
+            "properties": [
+                "26 m²",
+                "Aire acondicionado",
+                "Baño en suite",
+                "TV de pantalla plana",
+                "Wifi gratis"
+            ],
+            "size": "26 m²",
+            "description": "2 camas individuales. Camas cómodas, puntaje de 9 según 381 comentarios. This twin room features a electric kettle, flat-screen TV and air conditioning.",
+            "photos": [
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/288110284.jpg?k=563c54dd7fcf6736312b75895c383c9754fa843b80b3ab7dcd31c290aadef67e&o=",
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/288108425.jpg?k=fde16783a2468a6577f6248b623b5216d1efcf33af9d8c8d96248a09ec7a5daa&o="
+            ]
+        }
+    },
+    {
+        "name": "Outrigger Fiji Beach Resort",
+        "description": "Este complejo de lujo de 5 estrellas está ubicado frente a la playa en la isla de Viti Levu y ofrece una gran pileta exterior, un spa, room service las 24 horas y 7 restaurantes y bares. Además, el Outrigger Fiji Beach Resort dispone de centro de fitness abierto las 24 horas, instalaciones de práctica de golf y kayaks y equipos de snorkel de uso gratuito. El spa Bebe alberga 7 salas de tratamientos con balcones privados al aire libre y vistas al océano. El Outrigger Fiji Beach Resort está ubicado en un terreno de 16 hectáreas con palmeras y jardines tropicales, y ofrece habitaciones modernas con aire acondicionado y cabañas con techo de paja. Todos los alojamientos incluyen heladera, PlayStation y TV por cable. Durante la estadía en el Outrigger Fiji se puede comer en restaurantes galardonados y disfrutar de cócteles al atardecer junto a la playa. También se organizan actividades culturales típicas de Fiyi, como una ceremonia del kava y espectáculos tradicionales de caminatas sobre fuego.El Outrigger Fiji se encuentra a 7 minutos a pie del parque de aventuras Kula WILD, a 23 minutos en auto de la playa de Cuvu y a 1 hora en auto del aeropuerto internacional de Nadi.",
+        "stars": "5",
+        "price": "41772",
+        "services": [
+            "1 pileta",
+            "Traslados",
+            "Spa",
+            "Gimnasio excepcional",
+            "Wifi gratis",
+            "Ubicado frente a la playa",
+            "Bar",
+            "Muy buen desayuno"
+        ],
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/405213616.jpg?k=bf9aebf12940e95984707cce8d18b1e78798a9c726d6eda7461087f84d36b45e&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/405213534.jpg?k=4544e089c274af2a19568b930bccee9cbeb4a50073cc0e36d7746ea6d9f52bb4&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/405213645.jpg?k=b03f0ba88ae8c79518127bc6bce23cff144dbbbb0ba5a357d85762d357ebd8b1&o=&hp=1"
+        ],
+        "continent": "Oceania",
+        "location": "Fiji",
+        "city": "Korotogo",
+        "review": "",
+        "comments": [],
+        "room": {
+            "name": "Alojamiento con vistas al resort - 1 cama extragrande",
+            "properties": [
+                "47 m²",
+                "Balcón",
+                "Aire acondicionado",
+                "Minibar",
+                "Wifi gratis"
+            ],
+            "size": "47 m²",
+            "description": "This quadruple room has a balcony, air conditioning and minibar.",
+            "photos": [
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/405213648.jpg?k=d1cf9df2f455fa1e23913565a86d34e2ac882c0ad37c25d25154c9be827ee0b8&o=",
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/124175406.jpg?k=2d7d89f8b164837fb151516e631f5b6b0ab9294768e269b55f8a31252e272938&o="
+            ]
+        }
+    }
+]
